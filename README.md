@@ -1,2 +1,2 @@
-# RxSandbox
-Reactive programming sandbox
+# Random sandbox
+Programming sandbox repository
