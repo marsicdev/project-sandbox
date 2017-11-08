@@ -4,11 +4,13 @@ import { connect } from 'react-redux';
 class BookDetail extends Component {
     render() {
         const book = this.props.book;
-        
+
         if (!book) {
-            return <div>Select book to get started</div>
+            return (
+                <h5 className="center-align">Select book to get started</h5>
+            );
         }
-        
+
         const { title, pages } = book;
 
         return (

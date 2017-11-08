@@ -14,7 +14,7 @@ class BookList extends Component {
                 <li
                     key={book.title}
                     onClick={() => actions.selectBook(book)}
-                    className="list-group-item">
+                    className="collection-item">
                     {book.title}
                 </li>
             );
@@ -23,7 +23,8 @@ class BookList extends Component {
 
     render() {
         return (
-            <ul className="list-group col-sm-4">
+            <ul className="col s3 card-panel collection">
+                <li class="collection-header"><h4>Books</h4></li>
                 {this.renderList()}
             </ul>
         );
