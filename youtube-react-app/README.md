@@ -1,4 +1,4 @@
-# Book Redux App sample
+# Youtube React App sample
 
 ### Getting Started
 
