@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Field, reduxForm } from 'redux-form';
 import { error } from 'util';
 
-class NewPost extends Component {
+class PostCreate extends Component {
 
     renderField(field) {
         return (
@@ -17,7 +17,6 @@ class NewPost extends Component {
         );
     }
 
-
     handleSubmit() {
 
     }
@@ -28,7 +27,7 @@ class NewPost extends Component {
 
         return (
             <div className="section">
-                <form onSubmit={handleSubmit    } >
+                <form onSubmit={handleSubmit} >
                     <Field
                         label="Title"
                         name="title"
@@ -77,4 +76,4 @@ const formOptions = {
     form: 'PostsNewFrom'
 }
 
-export default reduxForm(formOptions)(NewPost);
+export default reduxForm(formOptions)(PostCreate);
