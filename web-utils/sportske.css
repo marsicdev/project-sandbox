@@ -1,0 +1,27 @@
+body {
+    font-family: 'Open Sans', serif;
+    font-size: 14pt;
+}
+
+p {
+    font-size: 14pt;
+}
+
+.title {
+
+}
+
+.subtitle {
+
+}
+
+.photo-credit {
+    font-size:10pt; 
+    background-color: rgba(0,0,0,.5); 
+    color: #fff; 
+    margin-top: -25px
+}
+
+.excerpt {
+    
+}
