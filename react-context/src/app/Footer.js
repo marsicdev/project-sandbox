@@ -1,9 +1,9 @@
 import React from 'react';
 
 const Footer = () => (
-    <footer class="page-footer">
-        <div class="footer-copyright">
-            <div class="container">
+    <footer className="page-footer teal lighten-2">
+        <div className="footer-copyright">
+            <div className="container">
                 © {new Date().getFullYear()} marsicdev
             </div>
         </div>

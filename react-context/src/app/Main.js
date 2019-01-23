@@ -5,12 +5,12 @@ import SideBar from './SideBar';
 const Main = ({ user }) => (
     <main>
         <div className="container">
-            <div class="row">
-                <div class="col s3">
+            <div className="row">
+                <div className="col s3">
                     <SideBar user={user} />
                 </div>
 
-                <div class="col s9">
+                <div className="col s9">
                     <Content />
                 </div>
 

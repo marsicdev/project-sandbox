@@ -1,11 +1,11 @@
 import React from 'react';
-import UserAvatar from './UserAvatar';
+import UserAvatar from './user/UserAvatar';
 
 const Nav = ({ user }) => (
-    <nav>
-        <div class="nav-wrapper">
-            <div class="container">
-                <a class="brand-logo"><i class="material-icons">cloud</i>Logo</a>
+    <nav className="teal lighten-2">
+        <div className="nav-wrapper">
+            <div className="container">
+                <a className="brand-logo"><i className="material-icons">cloud</i>Logo</a>
                 <UserAvatar user={user} />
             </div>
         </div>

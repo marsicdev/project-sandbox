@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
-import PostLists from './posts/PostList';
-import { postService } from '../services/PostService';
 
-class Content extends Component {
+import PostList from './PostList';
+
+import { postService } from '../../services/PostService';
+
+class PostsPage extends Component {
 
     constructor(props) {
         super(props);
@@ -10,7 +12,6 @@ class Content extends Component {
             posts: []
         }
     }
-
 
     componentDidMount() {
         this.loadPosts()
@@ -21,14 +22,14 @@ class Content extends Component {
             const posts = await postService.fetchPosts()
             this.setState({ posts });
         } catch (error) {
-            
+            throw Error("Something bad happened")
         }
     }
 
     render() {
         const { posts } = this.state;
-        return (<PostLists posts={posts} />)
+        return (<PostList posts={posts} />)
     }
 }
 
-export default Content;
+export default PostsPage;
